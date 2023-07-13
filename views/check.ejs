@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+
+<head>
+
+    <link href="../public/css/this.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+    <div class="main">
+        <h1 class="logo">이메일 인증</h1>
+        <div class="container">
+            <form action="/checking_send" method="POST" class="login_list">    
+                <input type="text" name="id" placeholder="[허가증을 받을 이메일주소]로 입력했던 주소" required="" autofocus="" />
+                <br>
+                <button class="btn_line" type="submit">확인</button>
+                <br>
+                <hr>
+                <br>
+
+            </form>
+            
+            <p id="alert" class="account"> </p>
+        </div>
+    </div>   
+    <script src="script.js"></script>
+</body>
+
+</html>

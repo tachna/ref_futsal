@@ -1,0 +1,25 @@
+<html>
+
+  <body>
+
+    <input type="date" name="accident" />
+
+  </body>
+
+</html>
+
+<script>
+  // Get date objects
+const today = new Date();
+const twoWeeksAgo = new Date();
+
+twoWeeksAgo.setDate(today.getDate() + 14);
+
+// Then set in input
+const input = document.querySelector('[name=accident]');
+
+input.setAttribute('max', twoWeeksAgo.toISOString().slice(0, 10));
+input.setAttribute('min', today.toISOString().slice(0, 10));
+</script>
+
+<!-- document.getElementById('dt').min = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split("T")[0]; -->
